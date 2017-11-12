@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/ivRowImage"
+        android:src="@drawable/customer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:padding="1dp"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvId"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="18dp"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/edtRowName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:enabled="false"
+            android:textSize="18dp"
+            android:gravity="right"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/edtRowQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Q"
+            android:textSize="18dp"
+            android:enabled="false"
+            android:gravity="right|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/edtRowPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="P"
+            android:textSize="18dp"
+            android:enabled="false"
+            android:gravity="right|center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtRowDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:hint="Description"
+        android:textSize="18dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:gravity="center"
+            android:text="UPDATE"
+            android:background="@drawable/but2"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:gravity="center"
+            android:text="DELETE"
+            android:background="@drawable/but2"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

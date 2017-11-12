@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/frontpage"
+    >
+
+
+
+    <EditText
+                    android:id="@+id/TFusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.79"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:hint="@string/enterUserName"
+        android:layout_above="@+id/TFpassword"
+        android:layout_alignLeft="@+id/TFpassword"
+        android:layout_alignStart="@+id/TFpassword" />
+
+
+
+                <EditText
+                    android:id="@+id/TFpassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.49"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:hint="@string/eneterPassword"
+
+                    android:layout_above="@+id/Blogin"
+                    android:layout_centerHorizontal="true" />
+
+
+
+
+
+                <Button
+                    android:id="@+id/Blogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onButtonClick"
+                    android:background="@drawable/mybutton2"
+                    android:textColor="#9B4DA3"
+                    android:text="Login"
+
+                    android:layout_alignBaseline="@+id/Bsignup"
+                    android:layout_alignBottom="@+id/Bsignup"
+                    android:layout_alignLeft="@+id/TFpassword"
+                    android:layout_alignStart="@+id/TFpassword" />
+
+    <Button
+        android:id="@+id/Bsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/TFpassword"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/TFpassword"
+
+        android:layout_marginBottom="40dp"
+        android:textColor="#9B4DA3"
+        android:layout_weight="3.55"
+        android:background="@drawable/mybutton2"
+        android:onClick="onButtonClick"
+        android:text="Sign Up" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+

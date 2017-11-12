@@ -1,0 +1,133 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.meher.Inventory.ProductListActivity"
+
+    android:background="@drawable/background"
+
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:weightSum="1"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:orientation="vertical"
+            android:layout_weight="0.79"
+            android:paddingTop="20dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView3"
+
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:scaleType="fitCenter"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="188dp"
+                android:orientation="vertical"
+                android:layout_weight="0.79"
+                android:paddingTop="20dp"
+                android:weightSum="1">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:weightSum="1">
+
+
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/button2"
+                    android:layout_alignBottom="@+id/button2"
+                    android:layout_marginLeft="100dp"
+                    android:layout_toLeftOf="@+id/button2"
+                    android:layout_toStartOf="@+id/button2"
+                    android:background="@drawable/butitem"
+                    android:text="ADD"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/btnSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/button2"
+                    android:layout_alignBottom="@+id/button2"
+                    android:layout_marginLeft="100dp"
+                    android:layout_toLeftOf="@+id/button2"
+                    android:layout_toStartOf="@+id/button2"
+                    android:background="@drawable/butitem"
+                    android:text="SEARCH"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/button2"
+                    android:layout_alignBottom="@+id/button2"
+                    android:layout_marginLeft="100dp"
+                    android:layout_toLeftOf="@+id/button2"
+                    android:layout_toStartOf="@+id/button2"
+                    android:background="@drawable/butitem"
+                    android:text="VIEW"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

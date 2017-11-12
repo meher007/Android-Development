@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:layout_gravity="center"
+    android:background="#00CCCC"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Product ID"/>
+
+        <EditText
+            android:id="@+id/edtId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:editable="false"
+            android:hint="ID"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Name"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="NAME"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Quantity"/>
+
+                <EditText
+                    android:id="@+id/edtQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+                    android:hint="QUANTITY"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:paddingTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:text="Price"/>
+
+                <EditText
+                    android:id="@+id/edtPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:ems="10"
+                    android:hint="PRICE"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:inputType="textPersonName" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/ivProductImage"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@android:color/darker_gray"
+                android:scaleType="fitXY"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Description"/>
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:ems="10"
+            android:hint="DESCRIPTION"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnDefault"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/but2"
+            android:text="ADD"/>
+
+    </LinearLayout>
+
+</LinearLayout>
