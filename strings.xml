@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">INVENTORY MANAGEMENT</string>
+    <string name="action_settings">Settings</string>
+    <string name="enterUserName">   Enter User Name</string>
+    <string name="eneterPassword">  Enter Password</string>
+    <string name="emptyString"></string>
+</resources>
